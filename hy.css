@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+     /* 内减模式 */
+    box-sizing: border-box;
+    }
+    li{
+    list-style: none;
+    }
+    p{
+     text-decoration: none;
+    }
+    .clearfix::before,.clearfix::after{
+    content: "";
+     display: table;
+    }
+    .clearfix::after{
+    clear: both;
+    }
+
+
+body{
+    font-family: "微软雅黑";
+    background-color: #e2f1f7;
+   background-size: 100%;
+   overflow-x: hidden;
+}
+/*头部盒子*/
+.header{
+    height: 130px;
+    width: 100%;
+    margin: auto auto 30px auto;
+    background-color: rgb(215, 249, 253);
+}
+
+.img1{
+    float: left;
+    position: absolute;
+    width:350px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/*菜单栏*/
+
+.nav{
+    position: absolute;
+    width: 960px;
+    height: 80px;
+    background-color: #fff;
+    margin-top: 25px;
+    margin-left: 400px;
+    border-radius: 15px;
+    z-index: 10000;
+}
+.nav li{
+    float: left;
+    padding: 20px 10px;
+}
+.nav li span a{
+    float: left;
+    display: block;
+    padding: 0 9px;
+    height: 42px;
+    font-size: 30px;
+    color: #050505;
+    text-decoration: none;
+}
+/*下滑菜单*/
+.button{
+    border-radius: 12px;
+    width: 160px;
+    float: left;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #b6e5f6;
+}
+
+.button li:hover{
+    background-color: #d3f8fd;
+}
+
+.button ul li{
+    font-size: 30px;
+    color: #eef5f6;
+    height: 0;
+    line-height: 25px;
+    transition: .2s;
+    opacity: 0;
+    margin-top: -200px;
+    transform: translateY(-65px);
+    background-color: #b6e5f6;
+}
+
+.button:hover li{
+    height: 65px;
+    opacity: 1;
+    margin-top: 0;
+    transform: translateY(0);
+}
+/* 主体 */
+.box{
+    display: grid;
+    width: 100%;
+    height: 900px;
+    margin: 0;
+}
+.item-1{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+    background-image: url(./sucai/hyhb.jpg);
+    background-size:100% 200px;
+    z-index: 0;
+}
+.item-2{
+    display: flex;
+    position: relative;
+    width: 1200px;
+    height: 620px;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    background-color: #fff;
+    z-index:1;
+    display: inline-block;
+}
+.one2{
+    display: grid;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin: 10px auto;
+    width: 170px;
+    height: 600px; 
+}
+.two1{
+    display: grid;
+    position: absolute;
+    width: 170px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top:0;
+}
+.two1 h2{
+    padding: 85px 22px;
+    text-align: center;
+    margin-left: 10px;
+}
+.two1 h2 a{
+    color: #b6e5f6;
+    text-decoration: none;
+}
+.two1 h2 a:hover{
+    color: rgba(127, 255, 212, 0.596);
+}
+.two2{
+    top: 10px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    /* border: 10px solid rgb(255 255 255 .5); */ 
+    background-color: rgba(221, 147, 51, 0.2);
+    margin-left: 10px;
+}
+.two3{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    /* border: 10px solid rgb(255 255 255 .5); */ 
+    background-color: rgba(221, 176, 51, 0.2);
+    margin-left: 10px;
+}
+.two4{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    /* border: 10px solid rgb(255 255 255 .5); */ 
+    background-color: rgba(221, 145, 51, 0.2);
+    margin-left: 10px;
+}
+.one3{
+    display:grid;
+    position: absolute;
+    align-items: center;
+    margin-left: 180px;
+    width: 1px;
+    height: 600px;
+    background-color: #9c896d4d;
+}
+/* 右边 */
+.one1{
+    display:grid;
+    float: right;
+    position: relative;
+    justify-content: center;
+    width:980px ;
+    height: 600px;
+    background-color: #d333;
+    margin: 10px 10px;
+}
+.two5{
+    width: 960px;
+    height: 200px;
+}
+.two5 p{
+    position: relative;
+    font-size: 20px;
+    line-height: 50px;
+    bottom: none;
+    text-align: left;
+    margin: 20px;
+    color: rgba(255, 255, 255, 0.964);
+}
+.two5 p span{
+    position: relative;
+    font-size: 30px;
+    color: #918f8f67;
+}
+.two5 p span:hover{
+    color: #d333;
+}
+.two6{
+    display: flex;
+    margin: 0 auto;
+    width: 960px;
+    height: 400px;
+}
+.two6 img{
+    width: 160px;
+    height: 160px;
+}
+.three1{
+    float: right;
+    position: relative;
+    width:160px;
+    height: 160px;
+    align-items: center;
+    margin: 16px;
+    margin-top: 220px;
+    overflow: hidden;
+    border-radius: 10%;
+    transition: all .6s;
+    cursor: pointer;
+}
+.three1 img:hover{
+    transform: scale(1.4);
+}
+.three1 p{
+    position: absolute;
+    left:43px;
+    top:130px;
+    font-size: 18px;
+    font-weight:bolder;
+    border: 1px solid #fcd5bc;
+    color: rgba(221, 51, 51, 0.37);
+}
+/* 尾部 */
+.backagrouud{
+    width:100%;
+    height: 400px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(224, 246, 255);
+}
+.hezi{
+    width: 220px;
+    height: 160px;
+    margin-top: 40px;
+    float: left;
+}
+.hezi1{
+    width: 100px;
+    height: 100px;
+    background-image: url(cxt1.png);
+    background-size:cover;
+    float: left;
+    border-radius: 50%;
+}
+.hezi2{
+    width: 100px;
+    height: 100px;
+    background-image: url(./sucai/ewm.png);
+    background-size:cover;
+    float: right;
+    border-radius: 20%;
+}
+.wenben{
+    width: 220px;
+    height: 200px;
+    float: left;
+    margin: 20px;
+}
+.wenben p{
+    
+    line-height: 32px;
+    text-align: left;
+    
+}
+.wenben p a{
+    text-decoration: none;
+    color:rgb(184, 187, 187); 
+}
+
+.wenzi{
+    width: 1200px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 30px;
+}    
+.wenzi .wenzin {
+    font-family:"宋体";  
+    float: right;
+    text-align: right;
+    padding: 20px 10px;
+}
+.wenzi .wenzin a{
+    text-decoration: none;
+    color: rgb(184, 187, 187);
+}
+.wenzin p a:hover{
+    text-decoration: underline;
+    color: aqua;
+}

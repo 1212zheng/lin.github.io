@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+     /* 内减模式 */
+    box-sizing: border-box;
+    }
+    li{
+    list-style: none;
+    }
+    p{
+     text-decoration: none;
+    }
+    .clearfix::before,.clearfix::after{
+    content: "";
+     display: table;
+    }
+    .clearfix::after{
+    clear: both;
+    }
+
+
+body{
+    font-family: "微软雅黑";
+    background-color: #e2f1f7;
+   background-size: 100%;
+   overflow-x: hidden;
+}
+/*头部盒子*/
+.header{
+    height: 130px;
+    width: 100%;
+    margin: auto auto 30px auto;
+    background-color: rgb(215, 249, 253);
+}
+
+.img1{
+    float: left;
+    position: absolute;
+    width:350px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/*菜单栏*/
+
+.nav{
+    position: absolute;
+    width: 960px;
+    height: 80px;
+    background-color: #fff;
+    margin-top: 25px;
+    margin-left: 400px;
+    border-radius: 15px;
+    z-index: 10000;
+}
+.nav li{
+    float: left;
+    padding: 20px 10px;
+}
+.nav li span a{
+    float: left;
+    display: block;
+    padding: 0 9px;
+    height: 42px;
+    font-size: 30px;
+    color: #050505;
+    text-decoration: none;
+}
+/*下滑菜单*/
+.button{
+    border-radius: 12px;
+    width: 160px;
+    float: left;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #b6e5f6;
+}
+
+.button li:hover{
+    background-color: #d3f8fd;
+}
+
+.button ul li{
+    font-size: 30px;
+    color: #eef5f6;
+    height: 0;
+    line-height: 25px;
+    transition: .2s;
+    opacity: 0;
+    margin-top: -200px;
+    transform: translateY(-65px);
+    background-color: #b6e5f6;
+}
+
+.button:hover li{
+    height: 65px;
+    opacity: 1;
+    margin-top: 0;
+    transform: translateY(0);
+}
+/* 主体 */
+.box{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.item{
+    display: flex;
+    width:100%;
+    height: 200px;  
+    justify-content: center;
+    background-color: #fff;
+  
+}
+.item img{
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.item1{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.it1,.it2,.it3{
+    display: flex;
+    width: 1200px;
+    margin-top: 20px;
+    justify-content: center;
+   
+}
+.it1 img{
+    position: relative;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 580px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(255,255,255,0.1);
+}
+.itt{
+    position: absolute;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    margin-left: 900px;
+    margin-top: 100px;
+}
+.itt p{
+    text-align:center;
+    font-size: 20px;
+    color: rgb(143, 158, 155);
+    line-height: 50px;
+    cursor: pointer;
+}
+.itt p span{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(130, 206, 187);
+    line-height: 50px;
+    cursor: pointer;
+}
+.ity{
+    position: absolute;
+    justify-content: center;
+    width: 300px;
+    height: 400px;
+    margin-right: 900px;
+    margin-top: 100px;
+}
+.ity p{
+    text-align:center;
+    font-size: 20px;
+    color: rgb(143, 158, 155);
+    line-height: 50px;
+    cursor: pointer;
+}
+.ity p span{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(130, 206, 187);
+    line-height: 50px;
+    cursor: pointer;
+}
+.it2 img{
+   margin: 20px;
+   width: 1200px;
+   height: 200px;
+   align-self: center;
+   justify-content: center;
+   box-shadow: 0px 5px 5px 0 rgb(182, 198, 194);
+}
+.itu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: 20px;
+}
+.itu p{
+    font-size: 25px;
+    color: rgb(143, 158, 155);
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+.itu p span{
+    font-size: 40px ;
+    font-weight: bold;
+    color: rgb(130, 206, 187);
+    line-height: 60px;
+    letter-spacing:20px ;
+    margin-left :20px ;
+    cursor: pointer;
+}
+.iti{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: 20px;
+}
+.iti button{
+    width: 200px ;
+    height: 50px;
+    align-self: center;
+    align-items: center;
+    border:2px solid#fff;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.iti button a{
+    font-weight: bold;
+    font-size: 25px;
+    color:rgb(130, 206, 187) ;
+    text-decoration: none;
+    text-align: center;
+}
+.iti button a:hover{
+    color: rgb(175, 255, 224);
+}
+/* 尾部 */
+.backagrouud{
+    width:100%;
+    height: 400px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(224, 246, 255);
+}
+.hezi{
+    width: 220px;
+    height: 160px;
+    margin-top: 40px;
+    float: left;
+}
+.hezi1{
+    width: 100px;
+    height: 100px;
+    background-image: url(cxt1.png);
+    background-size:cover;
+    float: left;
+    border-radius: 50%;
+}
+.hezi2{
+    width: 100px;
+    height: 100px;
+    background-image: url(./sucai/ewm.png);
+    background-size:cover;
+    float: right;
+    border-radius: 20%;
+}
+.wenben{
+    width: 220px;
+    height: 200px;
+    float: left;
+    margin: 20px;
+}
+.wenben p{
+    
+    line-height: 32px;
+    text-align: left;
+    
+}
+.wenben p a{
+    text-decoration: none;
+    color:rgb(184, 187, 187); 
+}
+
+.wenzi{
+    width: 1200px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 30px;
+}    
+.wenzi .wenzin {
+    font-family:"宋体";  
+    float: right;
+    text-align: right;
+    padding: 20px 10px;
+}
+.wenzi .wenzin a{
+    text-decoration: none;
+    color: rgb(184, 187, 187);
+}
+.wenzin p a:hover{
+    text-decoration: underline;
+    color: aqua;
+}

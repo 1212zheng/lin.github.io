@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+     /* 内减模式 */
+    box-sizing: border-box;
+    }
+    li{
+    list-style: none;
+    }
+    p{
+     text-decoration: none;
+    }
+    .clearfix::before,.clearfix::after{
+    content: "";
+     display: table;
+    }
+    .clearfix::after{
+    clear: both;
+    }
+
+
+body{
+    font-family: "微软雅黑";
+    background-color: #e2f1f7;
+   background-size: 100%;
+   overflow-x: hidden;
+}
+/*头部盒子*/
+.header{
+    height: 130px;
+    width: 100%;
+    margin: auto auto 30px auto;
+    background-color: rgb(215, 249, 253);
+}
+
+.img1{
+    float: left;
+    position: absolute;
+    width:350px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/*菜单栏*/
+
+.nav{
+    position: absolute;
+    width: 960px;
+    height: 80px;
+    background-color: #fff;
+    margin-top: 25px;
+    margin-left: 400px;
+    border-radius: 15px;
+    z-index: 10000;
+}
+.nav li{
+    float: left;
+    padding: 20px 10px;
+}
+.nav li span a{
+    float: left;
+    display: block;
+    padding: 0 9px;
+    height: 42px;
+    font-size: 30px;
+    color: #050505;
+    text-decoration: none;
+}
+/*下滑菜单*/
+.button{
+    border-radius: 12px;
+    width: 160px;
+    float: left;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #b6e5f6;
+}
+
+.button li:hover{
+    background-color: #d3f8fd;
+}
+
+.button ul li{
+    font-size: 30px;
+    color: #eef5f6;
+    height: 0;
+    line-height: 25px;
+    transition: .2s;
+    opacity: 0;
+    margin-top: -200px;
+    transform: translateY(-65px);
+    background-color: #b6e5f6;
+}
+
+.button:hover li{
+    height: 65px;
+    opacity: 1;
+    margin-top: 0;
+    transform: translateY(0);
+}
+/* 主体 */
+ .box{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+ }
+ .item{
+    display: flex;
+    float: left;
+    align-self: center;
+    margin: 20px;
+    justify-content: center;
+ }
+ .item img{
+    position: relative;
+    float: left;
+    border: 2px solid rgb(170, 245, 253);
+    border-radius: 10px;
+ }
+ .ite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    height: 400px;
+
+ }
+ .it img{
+    position: relative;
+    margin: 22px;
+    height: 100px;
+    width: 100px;
+    float: right;
+    border-radius: 50%;
+ }
+ .ite .it p{
+    text-align: center;
+    font-size: 30px;
+    line-height: 150px;
+    color: #86b0c0;
+    cursor: pointer;
+ } 
+ .ite .it p span{
+    text-align:center;
+    font-size: 30px;
+    line-height: 150px;
+    color: #86b0c0;
+    font-weight: bold;
+    cursor: pointer;
+ } 
+/* 尾部 */
+.backagrouud{
+    width:100%;
+    height: 400px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(224, 246, 255);
+}
+.hezi{
+    width: 220px;
+    height: 160px;
+    margin-top: 40px;
+    float: left;
+}
+.hezi1{
+    width: 100px;
+    height: 100px;
+    background-image: url(cxt1.png);
+    background-size:cover;
+    float: left;
+    border-radius: 50%;
+}
+.hezi2{
+    width: 100px;
+    height: 100px;
+    background-image: url(./sucai/ewm.png);
+    background-size:cover;
+    float: right;
+    border-radius: 20%;
+}
+.wenben{
+    width: 220px;
+    height: 200px;
+    float: left;
+    margin: 20px;
+}
+.wenben p{
+    
+    line-height: 32px;
+    text-align: left;
+    
+}
+.wenben p a{
+    text-decoration: none;
+    color:rgb(184, 187, 187); 
+}
+
+.wenzi{
+    width: 1200px;
+    height: 300px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 30px;
+}    
+.wenzi .wenzin {
+    font-family:"宋体";  
+    float: right;
+    text-align: right;
+    padding: 20px 10px;
+}
+.wenzi .wenzin a{
+    text-decoration: none;
+    color: rgb(184, 187, 187);
+}
+.wenzin p a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
